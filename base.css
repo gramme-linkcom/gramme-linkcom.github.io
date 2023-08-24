@@ -1,0 +1,36 @@
+#header {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 4px 8px -3px rgba(17, 17, 17, .06);
+    height: 56px;
+    position: fixed;
+    top: 0;
+    transition: .3s cubic-bezier(.4, 0, .2, 1);
+    width: 100%;
+    z-index: 199999;
+  }
+
+  .header-logo {
+    float: left;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 150px;
+  }
+
+  .head-animation {
+    transform: translateY(-100%);
+  }
+
+main {
+    position: relative;
+    background-color: rgba(60, 60, 60, 1);
+    height: 2000px;
+ }
+
+footer {
+    background-color: #2f5167;
+    color: #fff;
+    height: 50px;
+    padding: 40px;
+  }
