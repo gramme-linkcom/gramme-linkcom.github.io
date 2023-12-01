@@ -1,79 +1,74 @@
-
 @media screen and (min-width: 801px){
 
-a {
-  text-decoration: none;
-  display:block;
-  display:inline-block;
-  display:flex;
-}
-
-.header-list a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer-list a {
-  text-decoration: none;
-  color: white;
-}
-
-body {
-    font-family: "Noto Sans JP";
-  }
-  
-  li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 20px; 
-  }
-  .hamburger-menu {
-    display: none;
-  }
-  
-  #navi img{
-    margin-right: 5px;
-  }
-
-  #navi ul {
-    font-size:20px;
-    float: right;
-    padding: 10px 20px;
+  a {
+    text-decoration: none;
+    display:block;
+    display:inline-block;
     display:flex;
-    position: absolute;
-    top: 5%;
-    right: 10%;
-  }
-
-  .copy-container h1 {
-    font-size: 140px;
   }
   
-  .copy-container h2 {
-    font-size: 60px;
+  .header-list a {
+    text-decoration: none;
+    color: white;
   }
   
-  .copy-container span {
-    color: #ff4a4a;
-    padding-top:20px;
-  }  
-
-  .footer-logo {
-    float: left;
-    font-size: 32px;
+  .footer-list a {
+    text-decoration: none;
+    color: white;
   }
   
-  .footer-list {
-    float: left;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 20px; 
+    }
+    .hamburger-menu {
+      display: none;
+    }
+    
+    #navi img{
+      margin-right: 5px;
+    }
+  
+    #navi ul {
+      font-size:20px;
+      float: right;
+      padding: 10px 20px;
+      display:flex;
+      position: absolute;
+      top: 5%;
+      right: 10%;
+    }
+  
+    .copy-container h1 {
+      font-size: 140px;
+    }
+    
+    .copy-container h2 {
+      font-size: 60px;
+    }
+    
+    .copy-container span {
+      color: #ff4a4a;
+      padding-top:20px;
+    }  
+  
+    .footer-logo {
+      float: left;
+      font-size: 32px;
+    }
+    
+    .footer-list {
+      float: left;
+    }
+    
+    .footer-list li {
+      padding-bottom: 20px 20px;
+    }
+  
+  * {
+      margin: 0px;
+      padding: 0px;
   }
   
-  .footer-list li {
-    padding-bottom: 20px 20px;
   }
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-}
