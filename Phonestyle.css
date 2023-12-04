@@ -90,4 +90,10 @@
     left: 0;/*メニューを画面内へ*/
   } 
   
+  .footer-list{
+    position: relative;
+    width: 80vw;
+    top: 250px;
+    font-size: 0.6rem;
+  }
 }

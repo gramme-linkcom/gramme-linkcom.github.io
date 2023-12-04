@@ -70,5 +70,17 @@
       margin: 0px;
       padding: 0px;
   }
-  
+   .aboutme{
+    position: relative;
+    top: 50px;
+    left: 10vw;
+    width: 500px;
+    color: #c1c1c1;
+   }
+
+   .Recruitment_title{
+    text-decoration: none;
+    color: #c1c1c1;
+    width: 99vw;
+   }
   }

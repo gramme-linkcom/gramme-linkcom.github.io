@@ -24,8 +24,9 @@
 
 main {
   position: relative;
-  background-color: rgba(60, 60, 60, 1);
+  background-color: rgba(30, 30, 30, 1);
   min-height: 1080px;
+  height: 2000px;
   max-height: fit-content;
 }
 
@@ -35,4 +36,50 @@ footer {
   height: 300px;
   padding: 40px;
   text-align: left;
+}
+/* --- 全体のBOX定義 ---------------------------------------- */
+.box {
+  position   : relative;
+  width      : 100%;
+  height     : calc(100vw / 16 * 9 + 56px);
+  margin     : auto;
+  overflow   : hidden;
+}
+
+/* --- 背景の指定 ------------------------------------------- */
+.box .bgImg {
+  position   : absolute;
+  top        : 56px;
+  left       : 0;
+  bottom     : 0;
+  right      : 0;
+  opacity    : 0;
+  animation  : bgAnime 15s infinite;   /* 4画像 × 各5s = 20s */
+}
+
+/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+.box .src1 {
+  background-image : url(./top.png);   /* 背景の画像を指定 */
+  background-size: cover;
+  resize: both;
+}
+.box .src2 {
+  background-image : url(./CSMC.png);   /* 背景の画像を指定 */
+  animation-delay  : 5s;
+  background-size: cover;
+  resize: both;
+}
+.box .src3 {
+  background-image : url(./Conet_Dev.png);   /* 背景の画像を指定 */
+  animation-delay  : 10s;
+  background-size: cover;
+  resize: both;
+}
+
+@keyframes bgAnime {
+   0% { opacity: 0; }
+   5% { opacity: 1; }
+  25% { opacity: 1; }
+  40% { opacity: 0; }
+ 100% { opacity: 0; }
 }

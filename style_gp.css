@@ -22,7 +22,7 @@
     left:50%;
     transform: translateX(-50%);
     top:300px;
-    width:90vw
+    width:90vw;
 }
 
 .go_toppage{
@@ -36,5 +36,11 @@
     width:200px;
     height: 25px;
     background: #4a3869;
+    transition    : .3s;  
     border-radius: 30px;
+}
+
+.go_toppage:hover{
+    transition    : .3s;  
+    background: #8c7ea3;
 }
