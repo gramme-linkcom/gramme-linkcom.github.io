@@ -1,0 +1,80 @@
+/*========= レイアウトのためのCSS ===============*/
+@charset "UTF-8";
+html,body {
+  width:100%;
+  height: auto;
+  margin:0 auto;
+  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ',
+  'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+  background:linear-gradient(135deg, #10b8e0, #28db91);
+}
+
+img{
+  position: relative;
+  width: 40%;
+  max-width: 250px;
+  margin: 10px;
+}
+
+main{
+  height: 110%;
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+}
+
+.login{
+  position: absolute;
+  border-radius: 6px;
+  width: 80vw;
+  background-color:white;
+  padding: 30px 30px 40px;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input{
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #c2d3e2;
+}
+
+.text{
+  font-size: 20px;
+}
+
+.LoginB{
+  position: relative;
+  background: #1d6bb2;
+    color: #fff;
+    height: 40px;
+    padding: 10px;
+  FONT-WEIGHT: 500;
+  display: inline-block;
+  max-width: 265px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.margin{
+  position: relative;
+
+}
+
+.LoginB:hover{
+  opacity: .7;
+  transition: .3s;
+}
+
