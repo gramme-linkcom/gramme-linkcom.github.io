@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TeamLinkcom公式サイト</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+<input type="button" value="パスワードを入力" onclick="gate();">
+<script type="text/javascript">
+   function gate() {
+      var UserInput = prompt("パスワードを入力して下さい:","");
+     if (UserInput == "2022music") { 
+     location.href = "./music/music.html";
+     } else {
+     location.href = "https://teamlinkcom.web.fc2.com/";
+     }
+   }
+</script>
