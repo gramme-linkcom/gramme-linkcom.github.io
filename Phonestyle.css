@@ -97,3 +97,15 @@
     font-size: 0.6rem;
   }
 }
+
+@media screen and (max-width: 1305px){
+    .link{
+      max-width: 580px;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-between;
+      box-sizing: border-box;
+    }
+  }
