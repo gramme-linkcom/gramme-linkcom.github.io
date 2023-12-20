@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>City MC -新規登録ページ-</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <base id="base" href="" />
+    <link rel="stylesheet" href="/font.css">
+    <script src="link.js"></script>
     <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
@@ -12,7 +15,7 @@
     <script src="main.js"></script>
     <script src="Site_sizechenger.js"></script>
     <link rel="stylesheet" href="./Style_register.css">
-    <link rel="stylesheet" href="./Fc2.css">
+    <link rel="stylesheet" href="loading.css">
   </head>
   <body>
     <header>
@@ -20,7 +23,13 @@
     </header>
     <main>
       <div class="main">
-
+        <div class="loading" style="display:none;">
+          <div class="loading-frame">
+            <h2>処理中です<br>しばらくお待ち下さい
+            </h2>
+            <span class="loader"></span>
+          </div>
+        </div>
       <div class="login">
         <h1>参加お申し込み</h1>
         <div class="invitation">
@@ -66,7 +75,7 @@
         <div class="Made_Account" style="display: none;">
           <h2>アカウントの登録が完了しました。</h2>
           <p>下のボタンからログインページにアクセスしてください</p>
-          <button class="LoginB" onclick="location.href='./index'">ログインページへ</button>
+          <button class="LoginB" onclick="location.href='index.html'">ログインページへ</button>
         </div>
       </div>
       </div>

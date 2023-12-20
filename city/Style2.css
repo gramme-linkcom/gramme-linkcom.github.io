@@ -5,8 +5,7 @@
     height:auto;
     width:100%;
     margin:0 auto;
-    font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ',
-    'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+    font-family:'LineSeed';
     background:linear-gradient(135deg, #10b8e0, #28db91);
   }
 
@@ -96,8 +95,7 @@ html,body {
   height:auto;
   width:100%;
   margin:0 auto;
-  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ',
-  'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+  font-family:'LineSeed';
   background:linear-gradient(135deg, #10b8e0, #28db91);
 }
 
