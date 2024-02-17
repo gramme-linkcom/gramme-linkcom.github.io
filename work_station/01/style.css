@@ -49,14 +49,14 @@ input[type="checkbox"]:checked:before {
 
 input[type="checkbox"]:checked{
     background: #ff73007c;
-    border-radius: 0.8px;
+    border-radius: 1px;
 }
 
 input[type=checkbox] {
     position: absolute;
-	transform: scale(40,40);
-    top: 320px;
-	left: 320px;
+	transform: scale(44,44);
+    top: 342px;
+	left: 342px;
     z-index: 0;
 }
 
