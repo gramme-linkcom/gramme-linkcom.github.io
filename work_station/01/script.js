@@ -71,7 +71,11 @@ function Delete_All_1() {
         Myelement[1].value = "";
     }
     screen_mode="true"
-    element.style.display = "none"
+    var Class= document.getElementsByClassName("Del_Button_menu")
+    Class[0].id = "Del_Button_menu_none"
+    Class[1].id = "Del_Button_menu_none"
+    Class[2].id = "Del_Button_menu_none"
+    Class[3].id = "Del_Button_menu_none"
 }
 
 function Delete_All_2() {
@@ -82,7 +86,11 @@ function Delete_All_2() {
         Myelement[1].value = "";
     }
     screen_mode="true"
-    element.style.display = "none"
+    var Class= document.getElementsByClassName("Del_Button_menu")
+    Class[0].id = "Del_Button_menu_none"
+    Class[1].id = "Del_Button_menu_none"
+    Class[2].id = "Del_Button_menu_none"
+    Class[3].id = "Del_Button_menu_none"
 }
 
 function Delete_All_3() {
@@ -93,7 +101,11 @@ function Delete_All_3() {
         Myelement[1].value = "";
     }
     screen_mode="true"
-    element.style.display = "none"
+    var Class= document.getElementsByClassName("Del_Button_menu")
+    Class[0].id = "Del_Button_menu_none"
+    Class[1].id = "Del_Button_menu_none"
+    Class[2].id = "Del_Button_menu_none"
+    Class[3].id = "Del_Button_menu_none"
 }
 
 function Delete_All_4() {
@@ -104,7 +116,11 @@ function Delete_All_4() {
         Myelement[1].value = "";
     }
     screen_mode="true"
-    element.style.display = "none"
+    var Class= document.getElementsByClassName("Del_Button_menu")
+    Class[0].id = "Del_Button_menu_none"
+    Class[1].id = "Del_Button_menu_none"
+    Class[2].id = "Del_Button_menu_none"
+    Class[3].id = "Del_Button_menu_none"
 }
 
 function checked_checkbox(){
@@ -123,3 +139,22 @@ function check_All_unlock(){
         element[i].checked = false;
     }
 }
+
+function Return_top(){
+        window.scroll({
+            top: 0,
+            behavior:'smooth'
+        });
+}
+
+window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    console.log(y)
+    if (y >= 2100){
+        var Class= document.getElementById("Return_top")
+        Class.style.display = ""
+    } else if (y <= 2100){
+        var Class= document.getElementById("Return_top")
+        Class.style.display = "none"
+    }
+  });
