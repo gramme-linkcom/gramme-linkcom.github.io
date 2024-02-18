@@ -244,7 +244,7 @@ footer{
     cursor: pointer;
     position: absolute;
     display: inline-block;
-    top: 270px;
+    top: 285px;
     left: 50px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .25);
 }
