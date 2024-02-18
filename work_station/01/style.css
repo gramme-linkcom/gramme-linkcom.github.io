@@ -6,9 +6,15 @@
 html{
     font-family: "メイリオ", meiryo, sans-serif;
     height: auto;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     background: linear-gradient(135deg, #10b8e0, #28db91);
+    z-index: -3;
+    scroll-behavior: smooth;
+    overflow:auto;
+}
+body{
+    overflow: hidden;
 }
 
 [class^="LIST_"]{
@@ -20,6 +26,7 @@ html{
     margin: 0 auto;
     border-radius: 50px;
     margin-top: 30px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .8);
 }
 input[type="checkbox"] {
     border-radius: 0;
@@ -33,6 +40,7 @@ input[type="checkbox"] {
     width: 16px;
     height: 16px;
     vertical-align: -5px;
+    transition :.1s;
 }
 
 input[type="checkbox"]:checked:before {
@@ -70,6 +78,8 @@ input[type=checkbox] {
     border: 3px solid black;
     text-align: center;
     font-weight : bold ;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
 .num{
@@ -82,16 +92,181 @@ input[type=checkbox] {
     text-align: center;
     border: 3px solid black;
     font-weight : bold ;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
 header{
     margin: 0;  /* 解決するため */
     padding: 0; /* 入れておくと無難 */
-    height:100px;
+    height:350px;
     width: 100%;
     background-color: white;
 }
 
 footer{
     height:100px;
+}
+
+.List_switch{
+    position: relative;
+    width: 200px;
+    height: 80px;
+    background-color: #10b8e0;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight : bold ;
+    font-size: 1.5rem;
+    left: 30px;
+    top: 100px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    transition :.2s;
+}
+
+.List_switch:active{
+    transition :.2s;
+    background-color: #70cce4;
+}
+
+.Header_title{
+    position: absolute;
+    font-size: 3rem;
+    top: 30px;
+    left: 30px;
+}
+
+.title_holder_div{
+    position:relative;
+    margin-top: 30px;
+    margin-left: 50px;
+    background: white;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+    width: 350px;
+    height: 150px;
+    border-radius: 100px;
+    display: flex;
+    z-index: 9;
+}
+.title_holder{
+    position: relative;
+    top: 50px;
+    left: 30px;
+    font-size: 3rem;
+}
+
+.Del_All{
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    background-color: #ff3838;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight : bold ;
+    font-size: 2rem;
+    left: 30px;
+    top: 35px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+    transition :.2s;
+    z-index: -1;
+}
+
+.Del_All:active{
+    background-color: #910000;
+    transition :.2s;
+}
+
+.Del_menu{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #ff3838;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight : bold ;
+    font-size: 2rem;
+    right: 30px;
+    top: 35px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+    transition :.2s;
+}
+
+.Del_menu:active{
+    background-color: #910000;
+}
+
+
+#Del_Button_menu{
+    display:inline-block;
+    position:absolute;
+    background: white;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+    top: 380px;
+    left: 70px;
+    width: 350px;
+    height: 150px;
+    border-radius: 50px 100px 100px 50px;
+    transform: translateX(400px);
+    transition: .5s all ease-out;
+    z-index: 9;
+}
+
+#Del_Button_menu_none{
+    position:absolute;
+    background: white;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+    border-radius:100px 100px;
+    width: 250px;
+    height: 100px;
+    left: 70px;
+    top: 380px;
+    display:inline-block;
+    transform: translateX(0);
+    transition: .5s all ease-in;
+    z-index: -9999;
+}
+
+.autoscroll_title{
+    position:relative;
+    top: 130px;
+    left: 30px;
+    font-size: 3rem;
+}
+
+.toggle > div {
+    --width: 100px;
+    width: var(--width);
+    height: calc(var(--width) / 2);
+    border-radius: calc(var(--width) / 2);
+    background: gray;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    top: 150px;
+    left: 50px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .25);
+}
+
+.toggle > div::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.5s;
+    box-shadow: 0 0 8px gray;
+}
+
+.toggle [type=checkbox]:checked + div::before {
+    transform: translateX(100%);
+}
+
+.toggle [type=checkbox]:checked + div {
+    background: lightgreen;
+}
+.toggle [type=checkbox] {
+    display: none;
 }
