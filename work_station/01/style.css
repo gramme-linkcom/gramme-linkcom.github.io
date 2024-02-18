@@ -104,7 +104,7 @@ header{
 }
 
 footer{
-    height:100px;
+    height:150px;
 }
 
 .List_switch{
@@ -325,4 +325,12 @@ footer{
 .Return_top_button:active{
     background: rgb(88, 88, 88);
     color: white;
+}
+
+.CopyRight_notice{
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    left: 30px;
+
 }

@@ -69,8 +69,9 @@ function Delete_All_1() {
         Myelement = document.getElementsByName(num);
         Myelement[0].value = "";
         Myelement[1].value = "";
+        localStorage.clear()
     }
-    screen_mode="true"
+    screen_mode="false"
     var Class= document.getElementsByClassName("Del_Button_menu")
     Class[0].id = "Del_Button_menu_none"
     Class[1].id = "Del_Button_menu_none"
@@ -84,8 +85,9 @@ function Delete_All_2() {
         Myelement = document.getElementsByName(num);
         Myelement[0].value = "";
         Myelement[1].value = "";
+        localStorage.clear()
     }
-    screen_mode="true"
+    screen_mode="false"
     var Class= document.getElementsByClassName("Del_Button_menu")
     Class[0].id = "Del_Button_menu_none"
     Class[1].id = "Del_Button_menu_none"
@@ -99,8 +101,9 @@ function Delete_All_3() {
         Myelement = document.getElementsByName(num);
         Myelement[0].value = "";
         Myelement[1].value = "";
+        localStorage.clear()
     }
-    screen_mode="true"
+    screen_mode="false"
     var Class= document.getElementsByClassName("Del_Button_menu")
     Class[0].id = "Del_Button_menu_none"
     Class[1].id = "Del_Button_menu_none"
@@ -114,8 +117,9 @@ function Delete_All_4() {
         Myelement = document.getElementsByName(num);
         Myelement[0].value = "";
         Myelement[1].value = "";
+        localStorage.clear()
     }
-    screen_mode="true"
+    screen_mode="false"
     var Class= document.getElementsByClassName("Del_Button_menu")
     Class[0].id = "Del_Button_menu_none"
     Class[1].id = "Del_Button_menu_none"
