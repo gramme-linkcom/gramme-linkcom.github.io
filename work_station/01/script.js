@@ -111,7 +111,7 @@ function checked_checkbox(){
     let element = document.getElementById('Auto_Scroll_Check');
     if (element.checked == true){
         window.scroll({
-            top: window.scrollY+730,
+            top: window.scrollY+731,
             behavior:'smooth'
         });
       }
