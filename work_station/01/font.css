@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'LineSeed';
+    src: url('gramme_linkcom.github.io/font/LINESeedJP_OTF_Bd.woff') format('woff'),
+      url('gramme_linkcom.github.io/font/LINESeedJP_OTF_Eb.woff') format('woff'),
+      url('gramme_linkcom.github.io/font/LINESeedJP_OTF_Rg.woff') format('woff'),
+      url('gramme_linkcom.github.io/font/LINESeedJP_OTF_Th.woff') format('woff');
+  }
+
+html{
+    font-family: "LineSeed";
+}
