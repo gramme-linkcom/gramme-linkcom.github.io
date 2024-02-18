@@ -97,8 +97,8 @@ input[type=checkbox] {
 }
 
 header{
-    margin: 0;  /* 解決するため */
-    padding: 0; /* 入れておくと無難 */
+    margin: 0;
+    padding: 0;
     height:350px;
     width: 100%;
     background-color: white;
@@ -110,14 +110,14 @@ footer{
 
 .List_switch{
     position: relative;
-    width: 200px;
+    width: 220px;
     height: 80px;
     background-color: #10b8e0;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     color: white;
     font-weight : bold ;
-    font-size: 1.5rem;
+    font-size: 2rem;
     left: 30px;
     top: 100px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
@@ -269,4 +269,32 @@ footer{
 }
 .toggle [type=checkbox] {
     display: none;
+}
+
+.All_Unlock{
+    position: relative;
+    font-size: 3rem;
+    left: 500px;
+    top: 30px;
+}
+
+.All_unlock_Switch{
+    position: relative;
+    width: 220px;
+    height: 70px;
+    background-color: #ff3838;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight : bold ;
+    font-size: 2rem;
+    left: 500px;
+    top: 40px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    transition :.2s;
+}
+
+.All_unlock_Switch:active{
+    background-color: #910000;
+    transition :.2s;
 }

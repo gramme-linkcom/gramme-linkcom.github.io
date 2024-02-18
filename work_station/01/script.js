@@ -111,9 +111,15 @@ function checked_checkbox(){
     let element = document.getElementById('Auto_Scroll_Check');
     if (element.checked == true){
         window.scroll({
-            top: window.scrollY+731,
+            top: window.scrollY+735,
             behavior:'smooth'
         });
       }
 }
 
+function check_All_unlock(){
+    var element = document.getElementsByName('checkbox');
+    for (let i = 0; i < element.length; i++) {
+        element[i].checked = false;
+    }
+}
