@@ -69,7 +69,6 @@ function Delete_All_1() {
         Myelement = document.getElementsByName(num);
         Myelement[0].value = "";
         Myelement[1].value = "";
-        localStorage.clear()
     }
     screen_mode="false"
     var Class= document.getElementsByClassName("Del_Button_menu")
@@ -85,7 +84,6 @@ function Delete_All_2() {
         Myelement = document.getElementsByName(num);
         Myelement[0].value = "";
         Myelement[1].value = "";
-        localStorage.clear()
     }
     screen_mode="false"
     var Class= document.getElementsByClassName("Del_Button_menu")
@@ -101,7 +99,6 @@ function Delete_All_3() {
         Myelement = document.getElementsByName(num);
         Myelement[0].value = "";
         Myelement[1].value = "";
-        localStorage.clear()
     }
     screen_mode="false"
     var Class= document.getElementsByClassName("Del_Button_menu")
@@ -117,7 +114,6 @@ function Delete_All_4() {
         Myelement = document.getElementsByName(num);
         Myelement[0].value = "";
         Myelement[1].value = "";
-        localStorage.clear()
     }
     screen_mode="false"
     var Class= document.getElementsByClassName("Del_Button_menu")
