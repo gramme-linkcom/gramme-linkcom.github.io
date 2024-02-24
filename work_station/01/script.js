@@ -125,13 +125,15 @@ function Delete_All_4() {
 
 function checked_checkbox(){
     let element = document.getElementById('Auto_Scroll_Check');
+    position = window.scrollY+735
+    speed = 150
     if (element.checked == true){
-        window.scroll({
-            top: window.scrollY+735,
-            behavior:'smooth'
-        });
+        $('html').animate({scrollTop:position}, speed, 'swing'); 
+        return false; 
       }
 }
+
+
 
 function check_All_unlock(){
     var element = document.getElementsByName('checkbox');
@@ -149,7 +151,6 @@ function Return_top(){
 
 window.addEventListener('scroll', () => {
     const y = window.scrollY;
-    console.log(y)
     if (y >= 2100){
         var Class= document.getElementById("Return_top")
         Class.style.display = ""
@@ -171,3 +172,5 @@ window.addEventListener('scroll', () => {
               e.preventDefault();
           }
       });
+
+    

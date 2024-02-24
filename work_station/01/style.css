@@ -9,7 +9,6 @@ html{
     margin: 0 auto;
     background: linear-gradient(135deg, #10b8e0, #28db91);
     z-index: -3;
-    scroll-behavior: smooth;
     overflow:auto;
 }
 body{
