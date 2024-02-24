@@ -158,3 +158,16 @@ window.addEventListener('scroll', () => {
         Class.style.display = "none"
     }
   });
+
+  var isTouch = false;
+  $(document)
+      .on('touchstart', 'input[type="checkbox"]', function() {isTouch = true})
+      // スクロールで反応しないようにする
+      .on('touchmove', 'input[type="checkbox"]', function() {isTouch = false})
+      .on('touchend', 'input[type="checkbox"]', function(e){
+           // クリックイベントを強制発火
+           if (isTouch) {
+              $(this).trigger('click');
+              e.preventDefault();
+          }
+      });
