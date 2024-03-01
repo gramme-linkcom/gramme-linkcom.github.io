@@ -12,10 +12,14 @@
 <header>
     <div>
         <h3 class="Header_title">リストの切り替え</h3>
+    </div>
+    <div class="Switcher">
         <input class="List_switch" type="button" value="リスト1" onclick="list1();"/>
         <input class="List_switch" type="button" value="リスト2" onclick="list2();"/>
         <input class="List_switch" type="button" value="リスト3" onclick="list3();"/>
         <input class="List_switch" type="button" value="リスト4" onclick="list4();"/>
+        <input class="List_switch" type="button" value="リスト5" onclick="list5();"/>
+        <input class="List_switch" type="button" value="リスト6" onclick="list6();"/>
     </div>
     <div>
         <h3 class="autoscroll_title">自動スクロール</h3>
@@ -1188,6 +1192,584 @@
             <form data-persist=”garlic” method=”post”>
                 <input type="text" class="Course_id" name="4-40">
                 <input type="text" class="num" name="4-40">
+            </form>
+        </div>
+    </div>
+    <div class="LIST-5" id="List-5" style="display:none;">
+        <div class="title_holder_div">
+            <h1 class="title_holder">リスト５</h1>
+            <input class="Del_menu" type="button" value="＞" onclick="Change_menu_mode();"/>
+        </div>
+        <div class="Del_Button_menu" id="Del_Button_menu_none">
+            <input class="Del_All" type="button" value="一括削除" onclick="Delete_All_5();"/>
+        </div>
+        <div class="LIST_5-1" >
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-1">
+                <input type="text" class="num" name="5-1">
+            </form>
+        </div>
+        <div class="LIST_5-2">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-2">
+                <input type="text" class="num" name="5-2">
+            </form>
+        </div>
+        <div class="LIST_5-3">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-3">
+                <input type="text" class="num" name="5-3">
+            </form>
+        </div>
+        <div class="LIST_5-4">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-4">
+                <input type="text" class="num" name="5-4">
+            </form>
+        </div>
+        <div class="LIST_5-5">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-5">
+                <input type="text" class="num" name="5-5">
+            </form>
+        </div>
+        <div class="LIST_5-6">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-6">
+                <input type="text" class="num" name="5-6">
+            </form>
+        </div>
+        <div class="LIST_5-7">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-7">
+                <input type="text" class="num" name="5-7">
+            </form>
+        </div>
+        <div class="LIST_5-8">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-8">
+                <input type="text" class="num" name="5-8">
+            </form>
+        </div>
+        <div class="LIST_5-9">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-9">
+                <input type="text" class="num" name="5-9">
+            </form>
+        </div>
+        <div class="LIST_5-10">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-10">
+                <input type="text" class="num" name="5-10">
+            </form>
+        </div>
+        <div class="LIST_5-11">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-11">
+                <input type="text" class="num" name="5-11">
+            </form>
+        </div>
+        <div class="LIST_5-12">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-12">
+                <input type="text" class="num" name="5-12">
+            </form>
+        </div>
+        <div class="LIST_5-13">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-13">
+                <input type="text" class="num" name="5-13">
+            </form>
+        </div>
+        <div class="LIST_5-14">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-14">
+                <input type="text" class="num" name="5-14">
+            </form>
+        </div>
+        <div class="LIST_5-15">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-15">
+                <input type="text" class="num" name="5-15">
+            </form>
+        </div>
+        <div class="LIST_5-16">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-16">
+                <input type="text" class="num" name="5-16">
+            </form>
+        </div>
+        <div class="LIST_5-17">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-17">
+                <input type="text" class="num" name="5-17">
+            </form>
+        </div>
+        <div class="LIST_5-18">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-18">
+                <input type="text" class="num" name="5-18">
+            </form>
+        </div>
+        <div class="LIST_5-19">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-19">
+                <input type="text" class="num" name="5-19">
+            </form>
+        </div>
+        <div class="LIST_5-20">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-20">
+                <input type="text" class="num" name="5-20">
+            </form>
+        </div>
+        <div class="LIST_5-21">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-21">
+                <input type="text" class="num" name="5-21">
+            </form>
+        </div>
+        <div class="LIST_5-22">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-22">
+                <input type="text" class="num" name="5-22">
+            </form>
+        </div>
+        <div class="LIST_5-23">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-23">
+                <input type="text" class="num" name="5-23">
+            </form>
+        </div>
+        <div class="LIST_5-24">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-24">
+                <input type="text" class="num" name="5-24">
+            </form>
+        </div>
+        <div class="LIST_5-25">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-25">
+                <input type="text" class="num" name="5-25">
+            </form>
+        </div>
+        <div class="LIST_5-26">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-26">
+                <input type="text" class="num" name="5-26">
+            </form>
+        </div>
+        <div class="LIST_5-27">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-27">
+                <input type="text" class="num" name="5-27"> 
+            </form>
+        </div>
+        <div class="LIST_5-28">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-28">
+                <input type="text" class="num" name="5-28"> 
+            </form>
+        </div>
+        <div class="LIST_5-29">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-29">
+                <input type="text" class="num" name="5-29">
+            </form>
+        </div>
+        <div class="LIST_5-30">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-30">
+                <input type="text" class="num" name="5-30">
+            </form>
+        </div>
+        <div class="LIST_5-31">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-31">
+                <input type="text" class="num" name="5-31">
+            </form>
+        </div>
+        <div class="LIST_5-32">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-32">
+                <input type="text" class="num" name="5-32">
+            </form>
+        </div>
+        <div class="LIST_5-33">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-33">
+                <input type="text" class="num" name="5-33">
+            </form>
+        </div>
+        <div class="LIST_5-34">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-34">
+                <input type="text" class="num" name="5-34">
+            </form>
+        </div>
+        <div class="LIST_5-35">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-35">
+                <input type="text" class="num" name="5-35">
+            </form>
+        </div>
+        <div class="LIST_5-36">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-36">
+                <input type="text" class="num" name="5-36">
+            </form>
+        </div>
+        <div class="LIST_5-37">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-37">
+                <input type="text" class="num" name="5-37">
+            </form>
+        </div>
+        <div class="LIST_5-38">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-38">
+                <input type="text" class="num" name="5-38">
+            </form>
+        </div>
+        <div class="LIST_5-39">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-39">
+                <input type="text" class="num" name="5-39">
+            </form>
+        </div>
+        <div class="LIST_5-40">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="5-40">
+                <input type="text" class="num" name="5-40">
+            </form>
+        </div>
+    </div>
+    <div class="LIST-6" id="List-6" style="display:none;">
+        <div class="title_holder_div">
+            <h1 class="title_holder">リスト６</h1>
+            <input class="Del_menu" type="button" value="＞" onclick="Change_menu_mode();"/>
+        </div>
+        <div class="Del_Button_menu" id="Del_Button_menu_none">
+            <input class="Del_All" type="button" value="一括削除" onclick="Delete_All_6();"/>
+        </div>
+        <div class="LIST_6-1" >
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-1">
+                <input type="text" class="num" name="6-1">
+            </form>
+        </div>
+        <div class="LIST_6-2">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-2">
+                <input type="text" class="num" name="6-2">
+            </form>
+        </div>
+        <div class="LIST_6-3">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-3">
+                <input type="text" class="num" name="6-3">
+            </form>
+        </div>
+        <div class="LIST_6-4">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-4">
+                <input type="text" class="num" name="6-4">
+            </form>
+        </div>
+        <div class="LIST_6-5">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-5">
+                <input type="text" class="num" name="6-5">
+            </form>
+        </div>
+        <div class="LIST_6-6">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-6">
+                <input type="text" class="num" name="6-6">
+            </form>
+        </div>
+        <div class="LIST_6-7">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-7">
+                <input type="text" class="num" name="6-7">
+            </form>
+        </div>
+        <div class="LIST_6-8">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-8">
+                <input type="text" class="num" name="6-8">
+            </form>
+        </div>
+        <div class="LIST_6-9">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-9">
+                <input type="text" class="num" name="6-9">
+            </form>
+        </div>
+        <div class="LIST_6-10">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-10">
+                <input type="text" class="num" name="6-10">
+            </form>
+        </div>
+        <div class="LIST_6-11">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-11">
+                <input type="text" class="num" name="6-11">
+            </form>
+        </div>
+        <div class="LIST_6-12">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-12">
+                <input type="text" class="num" name="6-12">
+            </form>
+        </div>
+        <div class="LIST_6-13">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-13">
+                <input type="text" class="num" name="6-13">
+            </form>
+        </div>
+        <div class="LIST_6-14">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-14">
+                <input type="text" class="num" name="6-14">
+            </form>
+        </div>
+        <div class="LIST_6-15">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-15">
+                <input type="text" class="num" name="6-15">
+            </form>
+        </div>
+        <div class="LIST_6-16">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-16">
+                <input type="text" class="num" name="6-16">
+            </form>
+        </div>
+        <div class="LIST_6-17">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-17">
+                <input type="text" class="num" name="6-17">
+            </form>
+        </div>
+        <div class="LIST_6-18">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-18">
+                <input type="text" class="num" name="6-18">
+            </form>
+        </div>
+        <div class="LIST_6-19">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-19">
+                <input type="text" class="num" name="6-19">
+            </form>
+        </div>
+        <div class="LIST_6-20">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-20">
+                <input type="text" class="num" name="6-20">
+            </form>
+        </div>
+        <div class="LIST_6-21">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-21">
+                <input type="text" class="num" name="6-21">
+            </form>
+        </div>
+        <div class="LIST_6-22">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-22">
+                <input type="text" class="num" name="6-22">
+            </form>
+        </div>
+        <div class="LIST_6-23">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-23">
+                <input type="text" class="num" name="6-23">
+            </form>
+        </div>
+        <div class="LIST_6-24">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-24">
+                <input type="text" class="num" name="6-24">
+            </form>
+        </div>
+        <div class="LIST_6-25">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-25">
+                <input type="text" class="num" name="6-25">
+            </form>
+        </div>
+        <div class="LIST_6-26">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-26">
+                <input type="text" class="num" name="6-26">
+            </form>
+        </div>
+        <div class="LIST_6-27">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-27">
+                <input type="text" class="num" name="6-27"> 
+            </form>
+        </div>
+        <div class="LIST_6-28">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-28">
+                <input type="text" class="num" name="6-28"> 
+            </form>
+        </div>
+        <div class="LIST_6-29">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-29">
+                <input type="text" class="num" name="6-29">
+            </form>
+        </div>
+        <div class="LIST_6-30">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-30">
+                <input type="text" class="num" name="6-30">
+            </form>
+        </div>
+        <div class="LIST_6-31">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-31">
+                <input type="text" class="num" name="6-31">
+            </form>
+        </div>
+        <div class="LIST_6-32">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-32">
+                <input type="text" class="num" name="6-32">
+            </form>
+        </div>
+        <div class="LIST_6-33">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-33">
+                <input type="text" class="num" name="6-33">
+            </form>
+        </div>
+        <div class="LIST_6-34">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-34">
+                <input type="text" class="num" name="6-34">
+            </form>
+        </div>
+        <div class="LIST_6-35">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-35">
+                <input type="text" class="num" name="6-35">
+            </form>
+        </div>
+        <div class="LIST_6-36">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-36">
+                <input type="text" class="num" name="6-36">
+            </form>
+        </div>
+        <div class="LIST_6-37">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-37">
+                <input type="text" class="num" name="6-37">
+            </form>
+        </div>
+        <div class="LIST_6-38">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-38">
+                <input type="text" class="num" name="6-38">
+            </form>
+        </div>
+        <div class="LIST_6-39">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-39">
+                <input type="text" class="num" name="6-39">
+            </form>
+        </div>
+        <div class="LIST_6-40">
+            <input type="checkbox" class="checkbox" onchange="checked_checkbox()" name="checkbox">
+            <form data-persist=”garlic” method=”post”>
+                <input type="text" class="Course_id" name="6-40">
+                <input type="text" class="num" name="6-40">
             </form>
         </div>
     </div>

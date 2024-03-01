@@ -9,6 +9,10 @@ function list1(){
     element.style.display = "none"
     element = document.getElementById("List-4");
     element.style.display = "none"
+    element = document.getElementById("List-5");
+    element.style.display = "none"
+    element = document.getElementById("List-6");
+    element.style.display = "none"
 }
 
 function list2(){
@@ -19,6 +23,10 @@ function list2(){
     element = document.getElementById("List-3");
     element.style.display = "none"
     element = document.getElementById("List-4");
+    element.style.display = "none"
+    element = document.getElementById("List-5");
+    element.style.display = "none"
+    element = document.getElementById("List-6");
     element.style.display = "none"
 }
 
@@ -31,6 +39,10 @@ function list3(){
     element.style.display = ""
     element = document.getElementById("List-4");
     element.style.display = "none"
+    element = document.getElementById("List-5");
+    element.style.display = "none"
+    element = document.getElementById("List-6");
+    element.style.display = "none"
 }
 
 function list4(){
@@ -42,6 +54,40 @@ function list4(){
     element.style.display = "none"
     element = document.getElementById("List-4");
     element.style.display = ""
+    element = document.getElementById("List-5");
+    element.style.display = "none"
+    element = document.getElementById("List-6");
+    element.style.display = "none"
+}
+
+function list5(){
+    var element = document.getElementById("List-1");
+    element.style.display = "none"
+    element = document.getElementById("List-2");
+    element.style.display = "none"
+    element = document.getElementById("List-3");
+    element.style.display = "none"
+    element = document.getElementById("List-4");
+    element.style.display = "none"
+    element = document.getElementById("List-5");
+    element.style.display = ""
+    element = document.getElementById("List-6");
+    element.style.display = "none"
+}
+
+function list6(){
+    var element = document.getElementById("List-1");
+    element.style.display = "none"
+    element = document.getElementById("List-2");
+    element.style.display = "none"
+    element = document.getElementById("List-3");
+    element.style.display = "none"
+    element = document.getElementById("List-4");
+    element.style.display = "none"
+    element = document.getElementById("List-5");
+    element.style.display = "none"
+    element = document.getElementById("List-6");
+    element.style.display = ""
 }
 
 function Change_menu_mode() {
@@ -52,6 +98,8 @@ function Change_menu_mode() {
         Class[1].id = "Del_Button_menu"
         Class[2].id = "Del_Button_menu"
         Class[3].id = "Del_Button_menu"
+        Class[4].id = "Del_Button_menu"
+        Class[5].id = "Del_Button_menu"
         console.log(screen_mode)
     } else {
         screen_mode="false"
@@ -59,6 +107,8 @@ function Change_menu_mode() {
         Class[1].id = "Del_Button_menu_none"
         Class[2].id = "Del_Button_menu_none"
         Class[3].id = "Del_Button_menu_none"
+        Class[4].id = "Del_Button_menu_none"
+        Class[5].id = "Del_Button_menu_none"
         console.log(screen_mode)
     }
 }
@@ -76,6 +126,8 @@ function Delete_All_1() {
     Class[1].id = "Del_Button_menu_none"
     Class[2].id = "Del_Button_menu_none"
     Class[3].id = "Del_Button_menu_none"
+    Class[4].id = "Del_Button_menu_none"
+    Class[5].id = "Del_Button_menu_none"
 }
 
 function Delete_All_2() {
@@ -91,6 +143,8 @@ function Delete_All_2() {
     Class[1].id = "Del_Button_menu_none"
     Class[2].id = "Del_Button_menu_none"
     Class[3].id = "Del_Button_menu_none"
+    Class[4].id = "Del_Button_menu_none"
+    Class[5].id = "Del_Button_menu_none"
 }
 
 function Delete_All_3() {
@@ -106,6 +160,8 @@ function Delete_All_3() {
     Class[1].id = "Del_Button_menu_none"
     Class[2].id = "Del_Button_menu_none"
     Class[3].id = "Del_Button_menu_none"
+    Class[4].id = "Del_Button_menu_none"
+    Class[5].id = "Del_Button_menu_none"
 }
 
 function Delete_All_4() {
@@ -121,6 +177,42 @@ function Delete_All_4() {
     Class[1].id = "Del_Button_menu_none"
     Class[2].id = "Del_Button_menu_none"
     Class[3].id = "Del_Button_menu_none"
+    Class[4].id = "Del_Button_menu_none"
+    Class[5].id = "Del_Button_menu_none"
+}
+
+function Delete_All_5() {
+    for (let step=1; step < 41; step++) {
+        num = "5-"+String(step)
+        Myelement = document.getElementsByName(num);
+        Myelement[0].value = "";
+        Myelement[1].value = "";
+    }
+    screen_mode="false"
+    var Class= document.getElementsByClassName("Del_Button_menu")
+    Class[0].id = "Del_Button_menu_none"
+    Class[1].id = "Del_Button_menu_none"
+    Class[2].id = "Del_Button_menu_none"
+    Class[3].id = "Del_Button_menu_none"
+    Class[4].id = "Del_Button_menu_none"
+    Class[5].id = "Del_Button_menu_none"
+}
+
+function Delete_All_6() {
+    for (let step=1; step < 41; step++) {
+        num = "6-"+String(step)
+        Myelement = document.getElementsByName(num);
+        Myelement[0].value = "";
+        Myelement[1].value = "";
+    }
+    screen_mode="false"
+    var Class= document.getElementsByClassName("Del_Button_menu")
+    Class[0].id = "Del_Button_menu_none"
+    Class[1].id = "Del_Button_menu_none"
+    Class[2].id = "Del_Button_menu_none"
+    Class[3].id = "Del_Button_menu_none"
+    Class[4].id = "Del_Button_menu_none"
+    Class[5].id = "Del_Button_menu_none"
 }
 
 function checked_checkbox(){

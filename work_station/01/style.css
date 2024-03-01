@@ -110,6 +110,10 @@ footer{
     position: relative;
     width: 220px;
     height: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: #10b8e0;
     border: none;
     border-radius: 30px;
@@ -132,6 +136,7 @@ footer{
     font-size: 3rem;
     top: 30px;
     left: 30px;
+    width: fit-content;
 }
 
 .title_holder_div{
@@ -228,7 +233,7 @@ footer{
 
 .autoscroll_title{
     position:relative;
-    top: 130px;
+    top: 210px;
     left: 30px;
     font-size: 3rem;
 }
@@ -332,4 +337,17 @@ footer{
     font-size: 1.5rem;
     left: 30px;
 
+}
+
+.Switcher{
+    position: absolute;
+    overflow-x: scroll;
+    display: flex;
+    width: calc(100vw);
+    background: none;
+    height: 200px;
+}
+
+.Switcher::-webkit-scrollbar {
+    display: none;
 }
