@@ -1,0 +1,14 @@
+.join_server{
+    position: relative;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:white;
+    width: 90vw;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(112, 141, 228);
+    display: inline;
+}

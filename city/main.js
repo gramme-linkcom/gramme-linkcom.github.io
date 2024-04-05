@@ -89,13 +89,15 @@ function Account_startup(){
         /* 通信成功時 */
         var data_stringify = JSON.stringify(data);
         var data_json = JSON.parse(data_stringify);
-        if (data_json[0] == "Subscribed"){
-            const Made_Account = document.querySelector(".Made_Account");
-            const Check_AccountInfo = document.querySelector(".Check_AccountInfo");
-            Check_AccountInfo.style.display = "none";
-            Made_Account.style.display = "";
-            content.style.display = "none";
-        }
+            if (data_json[0] == "Subscribed"){
+                const Made_Account = document.querySelector(".Made_Account");
+                const Check_AccountInfo = document.querySelector(".Check_AccountInfo");
+                Check_AccountInfo.style.display = "none";
+                Made_Account.style.display = "";
+                content.style.display = "none";
+            } else if(data_json[0] == "Cannot Subscribe"){
+                document.getElementById('status').innerText = '現在、ユーザー登録を行えません。<br>大変申し訳ございませんが、しばらくお待ちいただいてから再度お試しください。';
+            }
         }).fail(function(data){
         /* 通信失敗時 */
         alert('通信失敗！');
@@ -209,7 +211,9 @@ function Acodion_Menu(){
         }
         }).fail(function(data){
         /* 通信失敗時 */
-        alert('通信失敗！');
+        alert('通信に失敗しました。再度お試しください。');
+        const content = document.querySelector(".loading");
+        content.style.display = "none";
         });
   }
 

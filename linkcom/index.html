@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <base id="base" href="" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Linkcom / リンクコム株式会社</title>
     <link rel="icon" href="/linkcom/favicon.ico" >
@@ -13,49 +14,49 @@
     <script src="/linkcom/link.js"></script>
   </head>
   <body>
-      <header id="header">
-      <div class="header-logo">
-        <a href="https://gramme-linkcom.github.io/"><img src="linkcom_logo.png" width="180px"></a>
-      </div>
-      <nav id="navi">
-        <ul class="header-list">
-          <li>
-            <a id="news" href="news/index.html" title="ニュース">ニュース</a>
-          </li>
-          <li>
-            <a id="about" href="" title="会社概要">会社概要</a>
-          </li>
-          <li>
-            <a id="ir" href="ir/index.html" title="IR(投資家情報)">IR(投資家情報)</a>
-          </li>
-          <li>
-            <a id="recruit" href="recruit/index.html" title="採用・キャリア教育">採用・キャリア教育</a>
-          </li>
-         </ul>
-        </nav>
-      </div>
-        <div class="hamburger-menu">
-            <input type="checkbox" id="menu-btn-check">
-            <label for="menu-btn-check" class="menu-btn"><span></span></label>
-            <!--ここからメニュー-->
-            <div class="menu-content">
-                <ul>
-                  <li>
-                    <a id="news" href="" title="ニュース">ニュース</a>
-                  </li>
-                  <li>
-                    <a id="about" href="about/index.html" title="会社概要">会社概要</a>
-                  </li>
-                  <li>
-                    <a id="ir" href="ir/index.html" title="IR(投資家情報)">IR(投資家情報)</a>
-                  </li>
-                  <li>
-                    <a id="recruit" href="recruit/index.html" title="採用・キャリア教育">採用・キャリア教育</a>
-                  </li>
-                </ul>
-            </div>
-            <!--ここまでメニュー-->
+      <header id="header" class="header">
+        <div class="header-logo">
+          <a  href="https://gramme-linkcom.github.io/"><img class="header-logo" src="linkcom_logo.png"></a>
         </div>
+        <nav id="navi">
+          <ul class="header-list">
+            <li>
+              <a id="news" href="news/index.html" title="ニュース">ニュース</a>
+            </li>
+            <li>
+              <a id="about" href="" title="会社概要">会社概要</a>
+            </li>
+            <li>
+              <a id="ir" href="ir/index.html" title="IR(投資家情報)">IR(投資家情報)</a>
+            </li>
+            <li>
+              <a id="recruit" href="recruit/index.html" title="採用・キャリア教育">採用・キャリア教育</a>
+            </li>
+          </ul>
+          </nav>
+        </div>
+          <div class="hamburger-menu">
+              <input type="checkbox" id="menu-btn-check">
+              <label for="menu-btn-check" class="menu-btn"><span></span></label>
+              <!--ここからメニュー-->
+              <div class="menu-content">
+                  <ul>
+                    <li>
+                      <a id="news" href="" title="ニュース">ニュース</a>
+                    </li>
+                    <li>
+                      <a id="about" href="about/index.html" title="会社概要">会社概要</a>
+                    </li>
+                    <li>
+                      <a id="ir" href="ir/index.html" title="IR(投資家情報)">IR(投資家情報)</a>
+                    </li>
+                    <li>
+                      <a id="recruit" href="recruit/index.html" title="採用・キャリア教育">採用・キャリア教育</a>
+                    </li>
+                  </ul>
+              </div>
+              <!--ここまでメニュー-->
+          </div>
       </header>
       <main>
         <div class="box">
@@ -85,4 +86,5 @@
         </div>
       </footer>
   </body>
+  <script src="script.js"></script>
 </html>

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
           document.getElementById('Username').innerText = Username+"様"
           document.getElementById('Username_Card').innerText = Username;
           document.getElementById('Cardnumber').innerText = data_json[4];
-          document.getElementById('Deposit').innerText = data_json[3].toLocaleString()+"円";
+          document.getElementById('Deposit').innerText = Number(data_json[3]).toLocaleString()+"円";
           document.getElementById('MainBank').innerText = "貯蓄先銀行："+data_json[2];
           console.log("complete!!")
           }).fail(function(data){

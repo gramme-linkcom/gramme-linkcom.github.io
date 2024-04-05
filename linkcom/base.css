@@ -1,21 +1,24 @@
 #header {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 0px 0px 10px 10px;
-  box-shadow: 0 4px 8px -3px rgba(17, 17, 17, .06);
-  height: 56px;
   position: fixed;
-  top: 0;
+  background: #252525;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .7);
+  height: 70px;
+  left: 50%;
+  transform: translateX(-50%);
   transition: .3s cubic-bezier(.4, 0, .2, 1);
-  width: 100%;
+  top: 10px;
+  width: 90%;
   z-index: 199999;
 }
 
 .header-logo {
   float: left;
   position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+  width: 190px;
 }
 
 .head-animation {
@@ -24,18 +27,19 @@
 
 main {
   position: relative;
-  background-color: rgba(30, 30, 30, 1);
+  background-color: white;
   min-height: 1080px;
   height: 1300px;
   max-height: fit-content;
 }
 
 footer {
-  background-color: #242424;
+  background-color: #24242456;
   color: #fff;
   height: 300px;
   padding: 40px;
   text-align: left;
+  text-shadow: 3px 3px 3px #808080;
 }
 /* --- 全体のBOX定義 ---------------------------------------- */
 .box {
@@ -83,4 +87,3 @@ footer {
   40% { opacity: 0; }
  100% { opacity: 0; }
 }
-

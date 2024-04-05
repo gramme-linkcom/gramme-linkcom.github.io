@@ -5,7 +5,7 @@
     height:auto;
     width:100%;
     margin:0 auto;
-    font-family:'LineSeed';
+    font-family:'LineSeed_B';
     background:linear-gradient(135deg, #10b8e0, #28db91);
     background-attachment: fixed;
     z-index: -1;
@@ -161,6 +161,15 @@ span::after {
   overflow: hidden;
 }
 
+.Server_address{
+  position: relative;
+  margin-top:20px ;
+  border-radius: 6px;
+  background-color:white;
+  padding: 20px 20px 30px;
+  overflow: hidden;
+}
+
 h2 ,#Deposit, #Mainbank{
   width: 100%;
   text-align: center;
@@ -194,6 +203,8 @@ h2{
   transform: translateX(-50%);
 }
 
+
+
 .Goto_MakeAc:hover{
   opacity: .7;
   transition: .3s;
@@ -209,8 +220,7 @@ html,body{
   height:auto;
   width:100%;
   margin:0 auto;
-  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ',
-  'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+  font-family:'LineSeed_B';
   background:linear-gradient(135deg, #10b8e0, #28db91);
   background-attachment: fixed;
 }
@@ -340,6 +350,17 @@ html,body{
     overflow: hidden;
 }
 
+.Server_address{
+  position: relative;
+  margin-top:20px ;
+  border-radius: 6px;
+  width: 40vw;
+  margin-left: 30em;
+  background-color:white;
+  padding: 20px 20px 30px;
+  overflow: hidden;
+}
+
 h2{
     text-align: center;
 }
@@ -348,6 +369,7 @@ input{
   width: 100%;
   padding: 8px 12px;
   border: 1px solid #c2d3e2;
+  border-radius: 5px;
 }
 
 .text{

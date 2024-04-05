@@ -1,8 +1,7 @@
-@media screen and (max-width: 965px){
+@media screen and (max-width: 1220px){
   * {
     margin: 0px;
     padding: 0px;
-
   }
 
   #navi{
@@ -58,14 +57,13 @@
 
   .menu-content {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     position: fixed;
     top: -10px;
     left: 100vw;/*leftの値を変更してメニューを画面外へ*/
     z-index: 80;
     background-color: #3c3c3c;
     transition: all 0.5s;/*アニメーション設定*/
-    border-radius: 25px 0 0 0;
 }
 .menu-content ul {
     padding: 70px 10px 0;
@@ -83,20 +81,40 @@
      box-sizing: border-box;
      color:#ffffff;
      text-decoration: none;
-     padding: 9px 15px 10px 0;
+     padding: 15px 15px 3px 0;
      position: relative;
      left: 20px;
   }
 
   #menu-btn-check:checked ~ .menu-content {
-    left: 30%;/*メニューを画面内へ*/
+    left: -5vw;/*メニューを画面内へ*/
   } 
   
   .footer-list{
     position: relative;
-    width: 80vw;
-    top: 250px;
-    font-size: 0.6rem;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .MC_Server,.Web_Server,.Payment_System{
+    font-size: 0.8rem;
+  }
+
+  .Server_Info_title,.about_server_title,.notice_title{
+    font-size: 1.5rem;
+  }
+
+  #WebService{
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: royalblue;
+    padding-top:3px;
   }
 }
 
