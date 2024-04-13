@@ -213,6 +213,61 @@ h2{
   footer{
     height: 100px;
   }
+  a {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    cursor:pointer;
+  }
+  .contract{
+    position: relative;
+    top: 10px;
+    padding:0;
+    list-style: none; 
+  }
+
+  .contract li{
+    position: relative;
+    top: -20px;
+  }
+
+  .contract a{
+    text-decoration: none;
+    height: 70px;
+    padding-top: 5px;
+    margin: 0;
+    color: black;
+    border-radius: 10px;
+  }
+
+  .contract a:hover{
+    background: rgba(221, 221, 221, 0.425);
+  }
+
+  .contract h3{
+    position: relative;
+    top: -20px;
+    left: 10px;
+    width: fit-content;
+  }
+
+  .contract h2{
+    position: relative;
+    text-align: center;
+    top: -40px;
+  }
+
+  .contract_username, .contract_password, .contract_email, .contract_address, .contract_PhoneNumber, .contract_linkedaccount{
+    height: 80px;
+  }
+
+  .contract hr{
+    position: relative;
+    top:-22px;
+    color: rgb(92, 92, 92);
+  }
+
+  .contract a{
+    display: block;
+  }
 }
 
 @media screen and (min-width: 951px){
@@ -413,4 +468,102 @@ footer{
     width: 100%;
     text-align: center;
   }
+
+  .contract{
+    position: relative;
+    top: 10px;
+    padding:0;
+    list-style: none; 
+  }
+
+  .contract li{
+    position: relative;
+    top: -20px;
+  }
+
+  .contract a{
+    text-decoration: none;
+    height: 70px;
+    padding-top: 5px;
+    margin: 0;
+    color: black;
+    border-radius: 10px;
+  }
+
+  .contract a:hover{
+    transition: 0.1s;
+    background: rgba(221, 221, 221, 0.425);
+  }
+
+  .contract a:active{
+    transition: 0.1s;
+    background: rgba(121, 121, 121, 0.425);
+  }
+  .contract h3{
+    position: relative;
+    top: -20px;
+    left: 10px;
+  }
+
+  .contract h2{
+    position: relative;
+    text-align: center;
+    top: -50px;
+  }
+
+  .contract_username, .contract_password, .contract_email, .contract_address, .contract_PhoneNumber, .contract_linkedaccount{
+    height: 80px;
+  }
+
+  .contract hr{
+    position: relative;
+    top:-22px;
+    color: rgb(92, 92, 92);
+  }
+
+  .contract a{
+    display: block;
+  }
+
+  .controller {
+    position: relative;
+    width: fit-content;
+    float:right
+  }
+
+  .controller a{
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    top: 15px;
+    height: 70px;
+    width: fit-content;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  .contract_controller_cancel{
+    transition: 0.1s;
+    color: #1d6bb2;
+    padding: 7px 10px;
+  }
+
+  .contract_controller_cancel:hover{
+    transition: 0.1s;
+    background: #1d6ab250;
+  }
+
+  .contract_controller_save{
+    transition: 0.1s;
+    background: #1d6bb2;
+    color: white;
+    padding: 7px 20px;
+  }
+
+  .contract_controller_save:hover{
+    transition: 0.1s;
+    background: #3a7cb9;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .5);
+  }
+
 }

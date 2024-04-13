@@ -1,6 +1,8 @@
 URL_str="https://script.google.com/macros/s/AKfycbz7dv_sN8KcGt2yq7gSZdjiWkeHVJL0jwncv2uAaiSZUga54d2ddJAKJdQ0yWDUoucN/exec"
 
 window.onpageshow = function(event) {
+  content = document.querySelector(".loading");
+  content.style.display = "";
   if (event.persisted) {
     var Username = String(Cookies.get('UserName'));
     var Password = String(Cookies.get('Password'));
@@ -11,6 +13,8 @@ window.onpageshow = function(event) {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
+  content = document.querySelector(".loading");
+  content.style.display = "";
   var UsernameEncrypt = String(Cookies.get('UserName'));
   var PasswordEncrypt = Cookies.get('Password');
 
@@ -39,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
           document.getElementById('Deposit').innerText = Number(data_json[3]).toLocaleString()+"円";
           document.getElementById('MainBank').innerText = "貯蓄先銀行："+data_json[2];
           console.log("complete!!")
+          content = document.querySelector(".loading");
+          content.style.display = "none";
           }).fail(function(data){
           alert('通信失敗！');
           });

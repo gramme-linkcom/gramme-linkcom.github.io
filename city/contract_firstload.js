@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
+    content = document.querySelector(".loading");
+    content.style.display = "";
     var UsernameEncrypt = String(Cookies.get('UserName'));
     var PasswordEncrypt = Cookies.get('Password');
-  
     if((UsernameEncrypt == "undefined")||(PasswordEncrypt == "undefind")){
       window.location.href = './index.html';
         return;
@@ -20,29 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }).done(function(data){
             data_stringify = JSON.stringify(data);
             data_json = JSON.parse(data_stringify);
-            if (data_json[10] == ""){
-                document.getElementById('mailaddress_span').innerHTML = "<span>未登録</span>";
-            } else {
-                document.getElementById('mailaddress_span').innerHTML = "<span>"+data_json[10]+"</span>";
-            }
-            if (data_json[6] == ""){
-                document.getElementById('address_span').innerHTML = "<span>未登録</span>";
-            } else {
-                document.getElementById('address_span').innerHTML = "<span>"+data_json[6]+"</span>";
-            }
-            if (data_json[4] == ""){
-                document.getElementById('Number_span').innerHTML = "<span>未登録(キャリア契約なし)</span>";
-            } else {
-                document.getElementById('Number_span').innerHTML = "<span>"+data_json[4]+"("+data_json[5]+")</span>";
-            }
-            if (data_json[7] == ""){
-                document.getElementById('linkedAccount_span').innerHTML = "<span>未登録</span>";
-            } else {
-                document.getElementById('linkedAccount_span').innerHTML = "<span>"+data_json[7]+"("+data_json[5]+")</span>";
-            }
-            }).fail(function(data){
-            alert('通信失敗！');
-            });
+            if (data_json[10] == ""){document.getElementById('mailaddress_span').innerHTML = "未登録";} else {document.getElementById('mailaddress_span').innerHTML = ""+data_json[10]+"";}
+            if (data_json[6] == ""){document.getElementById('address_span').innerHTML = "未登録";} else {document.getElementById('address_span').innerHTML = data_json[6];}
+            if (data_json[4] == ""){document.getElementById('Number_span').innerHTML = "未登録(キャリア契約なし)";} else {document.getElementById('Number_span').innerHTML = data_json[4]+"("+data_json[5]+")";}
+            if (data_json[7] == ""){document.getElementById('linkedAccount_span').innerHTML = "未登録";} else {document.getElementById('linkedAccount_span').innerHTML = data_json[7]+"("+data_json[5]+")";}
+            content.style.display = "none";
+            }).fail(function(data){alert('通信失敗！');});
     }
-    document.getElementById('Username_span').innerHTML = "<span>"+Username+"</span>";
+
+    document.getElementById('Username_span').innerText = Username;
 });
