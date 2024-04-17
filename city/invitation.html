@@ -1,1 +1,73 @@
-<html lang="ja"><head><meta charset="utf-8" /><title>City MC -新規ユーザー招待-</title><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"><link rel="stylesheet" href="gramme-linkcom.github.io/font.css"><link rel="stylesheet" href="loading.css"><script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script><script src="Script.js" defer></script><script src="main.js"></script><script src="motion.js"></script><script src="FirstLoad.js"></script><script src="invitation.js"></script><link rel="stylesheet" href="./main_Style.css"><link rel="stylesheet" href="../font.css"></head><header><div class="header" id="header"><a href="./main.html"><img src="Logo.png"></a><button class="hamburger_menu" id="hamburger" onclick="menus(this)"><span class="hamburger_menu"></span></button></div></header><main><div class="left-menu" id="left-menu"><nav class="Info_User"><ul><h1 class="Username" id="Username">●●　●●様</h1></ul><ul><button class="Goto_MakeAc" onclick="location.href='./Logout'">ログアウト</button></ul></nav><nav class="Site_Info"><h1>各種お手続き</h1><ul><button class="Goto_MakeAc" onclick="location.href='contract_info.html'">ご契約情報の確認・変更</button></ul><ul><button class="Goto_MakeAc" onclick="location.href='payment_info'">お支払いの確認</button></ul><ul><button class="Goto_MakeAc" onclick="location.href='bought_ticket'">購入済みのチケット情報</button></ul><ul><button class="Goto_MakeAc" onclick="location.href='service_using.html'">サービスのご利用状況</button></ul><ul><button class="Goto_MakeAc" onclick="location.href='mainbank_change.html'">主要貯蓄先銀行の変更</button></ul><ul><button class="Goto_MakeAc" onclick="location.href='application_info.html'">お申し込みの審査情報</button></ul><ul><button class="Goto_MakeAc" onclick="location.href='payment_using.html'">ご利用のお支払いサービス</button></ul></nav><nav class="Help_Info"><h1>その他</h1><ul><button class="Goto_MakeAc" onclick="location.href='invitation.html'">新規ユーザーの招待</button></ul><ul><button class="Goto_MakeAc" onclick="location.href='help.html'">ヘルプページ</button></ul><ul><button class="Goto_MakeAc" onclick="location.href='contact.html'">お問い合わせ</button></ul></nav><nav class="Help_Info"><h1>ブラウザー</h1><a href="./Browser/"><img src="SerchEngine.png"></a></nav></div><div class="content"><img src="Logo.png"><div class="main_info"><h1>招待コードの確認</h1><h3>招待コードの確認ができます。<br>招待時には、招待コードとあなたのユーザー名を記載してください。<br>下記文章をコピーして送ることも可能です。</h3><hr><h3>City Server MCに招待されています。</h3><h3 id="Username_invi"></h2><h3 id="InvitationCode">招待コード：少々お待ち下さい...</h3><h3>参加はこちらから：https://gramme-linkcom.github.io/city/register</h3></div></div><div id="hamburger_background" style="display: block;"></div></main><footer></footer></body></html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>City MC -新規ユーザー招待-</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="gramme-linkcom.github.io/font.css">
+    <link rel="stylesheet" href="loading.css">
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="Script.js" defer></script>
+    <script src="main.js"></script>
+    <script src="motion.js"></script>
+    <script src="FirstLoad.js"></script>
+    <script src="invitation.js"></script>
+    <link rel="stylesheet" href="./main_Style.css">
+    <link rel="stylesheet" href="../font.css">
+
+  </head>
+    <header>
+      <div class="header" id="header">
+        <a href="./main.html"><img src="Logo.png"></a>
+        <button class="hamburger_menu" id="hamburger" onclick="menus(this)"><span class="hamburger_menu"></span></button>
+      </div>
+    </header>
+    <main>
+      <div class="left-menu" id="left-menu">
+        <nav class="Info_User">
+          <ul><h1 class="Username" id="Username">●●　●●様</h1></ul>
+          <ul><button class="Goto_MakeAc" onclick="location.href='./Logout'">ログアウト</button></ul>
+        </nav>
+        <nav class="Site_Info">
+          <h1>各種お手続き</h1>
+          <ul><button class="Goto_MakeAc" onclick="location.href='contract_info.html'">ご契約情報の確認・変更</button></ul>
+          <ul><button class="Goto_MakeAc" onclick="location.href='payment_info'">お支払いの確認</button></ul>
+          <ul><button class="Goto_MakeAc" onclick="location.href='bought_ticket'">購入済みのチケット情報</button></ul>
+          <ul><button class="Goto_MakeAc" onclick="location.href='service_using.html'">サービスのご利用状況</button></ul>
+          <ul><button class="Goto_MakeAc" onclick="location.href='mainbank_change.html'">主要貯蓄先銀行の変更</button></ul>
+          <ul><button class="Goto_MakeAc" onclick="location.href='application_info.html'">お申し込みの審査情報</button></ul>
+          <ul><button class="Goto_MakeAc" onclick="location.href='payment_using.html'">ご利用のお支払いサービス</button></ul>
+        </nav>
+        <nav class="Help_Info">
+          <h1>その他</h1>
+          <ul><button class="Goto_MakeAc" onclick="location.href='invitation.html'">新規ユーザーの招待</button></ul>
+          <ul><button class="Goto_MakeAc" onclick="location.href='help.html'">ヘルプページ</button></ul>
+          <ul><button class="Goto_MakeAc" onclick="location.href='contact.html'">お問い合わせ</button></ul>
+        </nav>
+        <nav class="Help_Info">
+          <h1>ブラウザー</h1>
+          <a href="./Browser/"><img src="SerchEngine.png"></a>
+        </nav>
+      </div>
+          <div class="content">
+            <img src="Logo.png">
+            <div class="main_info">
+            <h1>招待コードの確認</h1>
+            <h3>招待コードの確認ができます。<br>招待時には、招待コードとあなたのユーザー名を記載してください。<br>下記文章をコピーして送ることも可能です。</h3>
+            <hr>
+            <h3>City Server MCに招待されています。</h3>
+            <h3 id="Username_invi"></h2>
+            <h3 id="InvitationCode">招待コード：少々お待ち下さい...</h3>
+            <h3>参加はこちらから：https://gramme-linkcom.github.io/city/register</h3>
+            
+          </div>
+        </div>
+        <div id="hamburger_background" style="display: block;">
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

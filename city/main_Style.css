@@ -1,1 +1,588 @@
-/*========= レイアウトのためのCSS ===============*/@charset "UTF-8";@media screen and (max-width: 950px){html,body {height:auto;width:100%;margin:0 auto;font-family:'LineSeed_B';background:linear-gradient(135deg, #10b8e0, #28db91);background-attachment: fixed;z-index: -1;}.header{width: 100%;position: fixed;top: 0%;background:linear-gradient(135deg, #10b8e0, #1ac6be);z-index: 4;}.header img{position:relative;width: 40%;max-width: 250px;margin: 10px;}#hamburger_background{position: fixed;width: 100vw;height: 100vh;background: none;z-index: 2;}#hamburger_background_display{position: fixed;top:0px;left: 0px;width: 100vw;height: 100vh;background: rgba(0, 0, 0, 0.5);z-index: 2;}#left-menu{position: fixed;height: calc(100vh- 300px/3.21);width: 100%;transform: translateX(100vw);transition: all .3s ease-in;z-index: 3;overflow-y: scroll;}#left-menu-display{position: fixed;height: calc(100vh- 300px/3.21);width: 100%;transform: translateX(0);transition: all .3s ease-out;z-index: 3;overflow-y: scroll;}.hamburger_menu{aspect-ratio:1/1;position:relative;float: right;right:20px;margin-top:10px;width: 10%;max-width: 250px;z-index: 5;background: none;border: 0px solid gray;}.hamburger_menu:hover{opacity: .7;transition: .3s;}.hamburger_menu span,.hamburger_menu span::before,.hamburger_menu span::after{display: block;margin:none;left:0px;height: 3px;width: 100%;background-color: white;content: "";position: absolute;}.hamburger_menu span{top: 2%;}span::before {top: 3vw;}span::after {top:6vw;}.left-menu::-webkit-scrollbar{display:none;}.Info_User,.Site_Info,.Help_Info{position: relative;background-color: white;padding: 20px 20px 30px;overflow: hidden;text-align: center;width: 60vw;float: right;}.Info_User ul,.Site_Info ul,.Help_Info ul{padding-inline-start: 0px;}.content{position: relative;width: 90vw;left: 50%;transform: translateX(-50%);z-index: 1;}.content img{width: 30%;top: 10px;margin: 10px;}.Help_Info img{width: 70%;top: 10px;margin: 10px;}.main_info{margin-top: 20px;position: relative;border-radius: 6px;background-color:white;padding: 20px 20px 30px;overflow: hidden;}.card_info{position: relative;margin-top:20px ;border-radius: 6px;background-color:white;padding: 20px 20px 30px;overflow: hidden;}.Server_address{position: relative;margin-top:20px ;border-radius: 6px;background-color:white;padding: 20px 20px 30px;overflow: hidden;}h2 ,#Deposit, #Mainbank{width: 100%;text-align: center;}h2{font-size: 1.2rem;}.Goto_MakeAc{transition: .3s;position: relative;background: #1d6bb2;color: #fff;height: 40px;FONT-WEIGHT: 500;display: inline-block;max-width: 300px;width: 100%;font-size: 1.1rem;font-weight: bold;height: 50px;padding: 10px;text-align: center;border-radius: 4px;display: flex;align-items: center;justify-content: center;border: 1px solid #c2d3e2;left: 50%;transform: translateX(-50%);}.Goto_MakeAc:hover{opacity: .7;transition: .3s;}footer{height: 100px;}a {-webkit-tap-highlight-color:rgba(0,0,0,0);cursor:pointer;}.contract{position: relative;top: 10px;padding:0;list-style: none; }.contract li{position: relative;top: -20px;}.contract a{text-decoration: none;height: 70px;padding-top: 5px;margin: 0;color: black;border-radius: 10px;}.contract a:hover{background: rgba(221, 221, 221, 0.425);}.contract h3{position: relative;top: -20px;left: 10px;width: fit-content;}.contract h2{position: relative;text-align: center;top: -40px;}.contract_username, .contract_password, .contract_email, .contract_address, .contract_PhoneNumber, .contract_linkedaccount{height: 80px;}.contract hr{position: relative;top:-22px;color: rgb(92, 92, 92);}.contract a{display: block;}}@media screen and (min-width: 951px){html,body{height:auto;width:100%;margin:0 auto;font-family:'LineSeed_B';background:linear-gradient(135deg, #10b8e0, #28db91);background-attachment: fixed;}.content img,.hamburger_menu{display: none;}.header{width: 100%;height: 90px;position: fixed;top: 0%;}.header img{position: relative;padding-left: 5%;padding-right: 5%;top:5px;width: 250px;}.left-menu{position: fixed;height: 80vh;display: block;overflow-y: scroll;background: none;margin-left: -60%;}.left-menu::-webkit-scrollbar{display:none;}main{border-radius: 4px;display: flex;justify-content: center;margin-top: 100px;}.Info_User,.Site_Info,.Help_Info{margin-top: 15px;border-radius: 6px;background-color: white;width: 320px;padding-bottom: 1%;padding: 5px;text-align: center;}.Info_User ul,.Site_Info ul,.Help_Info ul{width: 100%;list-style:none;text-align: center;padding-left:0;}.Help_Info img{width: 250px;border-radius: 6px;border: 2px solid gray;}.url{position: relative;top:10px;font-size: 1.2rem;left: 30px;}.Goto_MakeAc{transition: .3s;position: relative;background: #1d6bb2;color: #fff;height: 40px;FONT-WEIGHT: 500;display: inline-block;max-width: 300px;width: 100%;font-size: 1.1rem;font-weight: bold;height: 50px;padding: 10px;text-align: center;border-radius: 4px;display: flex;align-items: center;justify-content: center;border: 1px solid #c2d3e2;left: 50%;transform: translateX(-50%);}.Goto_MakeAc:hover{opacity: .7;transition: .3s;}.content{display:block;}.main_info{position: relative;border-radius: 6px;width: 40vw;margin-left: 30em;background-color:white;padding: 20px 20px 30px;overflow: hidden;}.card_info{position: relative;margin-top:20px ;border-radius: 6px;width: 40vw;margin-left: 30em;background-color:white;padding: 20px 20px 30px;overflow: hidden;}.Server_address{position: relative;margin-top:20px ;border-radius: 6px;width: 40vw;margin-left: 30em;background-color:white;padding: 20px 20px 30px;overflow: hidden;}h2{text-align: center;}input{width: 100%;padding: 8px 12px;border: 1px solid #c2d3e2;border-radius: 5px;}.text{font-size: 20px;}.LoginB{position: relative;background: #1d6bb2;color: #fff;height: 40px;padding: 10px;FONT-WEIGHT: 500;display: inline-block;max-width: 265px;width: 100%;font-size: 1.1rem;font-weight: bold;height: 50px;margin-top: 20px;padding: 10px;text-align: center;border-radius: 4px;display: flex;align-items: center;justify-content: center;left: 50%;transform: translateX(-50%);}footer{height: 100px;}#Deposit{width: 100%;text-align: center;font-size: 3rem;}#MainBank{width: 100%;text-align: center;}.contract{position: relative;top: 10px;padding:0;list-style: none; }.contract li{position: relative;top: -20px;}.contract a{text-decoration: none;height: 70px;padding-top: 5px;margin: 0;color: black;border-radius: 10px;}.contract a:hover{transition: 0.1s;background: rgba(221, 221, 221, 0.425);}.contract a:active{transition: 0.1s;background: rgba(121, 121, 121, 0.425);}.contract h3{position: relative;top: -20px;left: 10px;}.contract h2{position: relative;text-align: center;top: -50px;}.contract_username, .contract_password, .contract_email, .contract_address, .contract_PhoneNumber, .contract_linkedaccount{height: 80px;}.contract hr{position: relative;top:-22px;color: rgb(92, 92, 92);}.contract a{display: block;}.controller {position: relative;width: fit-content;float:right}.controller a{position: relative;text-decoration: none;font-size: 15px;top: 15px;height: 70px;width: fit-content;margin: 0;border-radius: 20px;}.contract_controller_cancel{transition: 0.1s;color: #1d6bb2;padding: 7px 10px;}.contract_controller_cancel:hover{transition: 0.1s;background: #1d6ab250;}.contract_controller_save{transition: 0.1s;background: #1d6bb2;color: white;padding: 7px 20px;}.contract_controller_save:hover{transition: 0.1s;background: #3a7cb9;box-shadow: 0 1px 0 0 rgba(0, 0, 0, .5);} /*.contract span {position: relative;}.contract span::before {content: "";width: 15px;height: 15px;transform: rotate(45deg);border-style: solid;border-color: #000;border-top-width: 3px;border-right-width: 3px;border-bottom-width: 0;border-left-width: 0;vertical-align: middle;float:right;margin-right: 30px;}*/}
+/*========= レイアウトのためのCSS ===============*/
+@charset "UTF-8";
+@media screen and (max-width: 950px){
+  html,body {
+    height:auto;
+    width:100%;
+    margin:0 auto;
+    font-family:'LineSeed_B';
+    background:linear-gradient(135deg, #10b8e0, #28db91);
+    background-attachment: fixed;
+    z-index: -1;
+  }
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background:linear-gradient(135deg, #10b8e0, #1ac6be);
+    z-index: 4;
+}
+
+.header img{
+  position:relative;
+    width: 40%;
+    max-width: 250px;
+    margin: 10px;
+}
+
+#hamburger_background{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: none;
+  z-index: 2;
+}
+
+#hamburger_background_display{
+  position: fixed;
+  top:0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+
+#left-menu{
+  position: fixed;
+  height: calc(100vh  - 300px/3.21);
+  width: 100%;
+  transform: translateX(100vw);
+  transition: all .3s ease-in;
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+#left-menu-display{
+  position: fixed;
+  height: calc(100vh  - 300px/3.21);
+  width: 100%;
+  transform: translateX(0);
+  transition: all .3s ease-out;
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+.hamburger_menu{
+  aspect-ratio:1/1;
+  position:relative;
+  float: right;
+  right:20px;
+  margin-top:10px;
+  width: 10%;
+  max-width: 250px;
+  z-index: 5;
+  background: none;
+  border: 0px solid gray;
+}
+
+.hamburger_menu:hover{
+  opacity: .7;
+  transition: .3s;
+}
+
+.hamburger_menu span,.hamburger_menu span::before,.hamburger_menu span::after{
+  display: block;
+  margin:none;
+  left:0px;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  content: "";
+  position: absolute;
+}
+
+.hamburger_menu span{
+  top: 2%;
+}
+
+span::before {
+  top: 3vw;
+}
+span::after {
+  top:6vw;
+}
+
+.left-menu::-webkit-scrollbar{
+  display:none;
+}
+
+.Info_User,.Site_Info,.Help_Info{
+  position: relative;
+  background-color: white;
+  padding: 20px 20px 30px;
+  overflow: hidden;
+  text-align: center;
+  width: 60vw;
+  float: right;
+}
+
+.Info_User ul,.Site_Info ul,.Help_Info ul{
+  padding-inline-start: 0px;
+}
+
+.content{
+    position: relative;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.content img{
+  width: 30%;
+  top: 10px;
+  margin: 10px;
+}
+
+.Help_Info img{
+  width: 70%;
+  top: 10px;
+  margin: 10px;
+}
+
+.main_info{
+  margin-top: 20px;
+  position: relative;
+  border-radius: 6px;
+  background-color:white;
+  padding: 20px 20px 30px;
+  overflow: hidden;
+}
+
+.card_info{
+  position: relative;
+  margin-top:20px ;
+  border-radius: 6px;
+  background-color:white;
+  padding: 20px 20px 30px;
+  overflow: hidden;
+}
+
+.Server_address{
+  position: relative;
+  margin-top:20px ;
+  border-radius: 6px;
+  background-color:white;
+  padding: 20px 20px 30px;
+  overflow: hidden;
+}
+
+h2 ,#Deposit, #Mainbank{
+  width: 100%;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+
+.Goto_MakeAc{
+    transition: .3s;
+  position: relative;
+  background: #1d6bb2;
+    color: #fff;
+    height: 40px;
+  FONT-WEIGHT: 500;
+  display: inline-block;
+  max-width: 300px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c2d3e2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.Goto_MakeAc:hover{
+  opacity: .7;
+  transition: .3s;
+}
+
+  footer{
+    height: 100px;
+  }
+  a {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    cursor:pointer;
+  }
+  .contract{
+    position: relative;
+    top: 10px;
+    padding:0;
+    list-style: none; 
+  }
+
+  .contract li{
+    position: relative;
+    top: -20px;
+  }
+
+  .contract a{
+    text-decoration: none;
+    height: 70px;
+    padding-top: 5px;
+    margin: 0;
+    color: black;
+    border-radius: 10px;
+  }
+
+  .contract a:hover{
+    background: rgba(221, 221, 221, 0.425);
+  }
+
+  .contract h3{
+    position: relative;
+    top: -20px;
+    left: 10px;
+    width: fit-content;
+  }
+
+  .contract h2{
+    position: relative;
+    text-align: center;
+    top: -40px;
+  }
+
+  .contract_username, .contract_password, .contract_email, .contract_address, .contract_PhoneNumber, .contract_linkedaccount{
+    height: 80px;
+  }
+
+  .contract hr{
+    position: relative;
+    top:-22px;
+    color: rgb(92, 92, 92);
+  }
+
+  .contract a{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 951px){
+html,body{
+  height:auto;
+  width:100%;
+  margin:0 auto;
+  font-family:'LineSeed_B';
+  background:linear-gradient(135deg, #10b8e0, #28db91);
+  background-attachment: fixed;
+}
+
+.content img,.hamburger_menu{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0%;
+  }
+
+.header img{
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  top:5px;
+  width: 250px;
+
+}
+
+.left-menu{
+    position: fixed;
+    height: 80vh;
+    display: block;
+    overflow-y: scroll;
+    background: none;
+    margin-left: -60%;
+}
+
+.left-menu::-webkit-scrollbar{
+    display:none;
+  }
+
+  main{
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+.Info_User,.Site_Info,.Help_Info{
+  margin-top: 15px;
+  border-radius: 6px;
+  background-color: white;
+  width: 320px;
+  padding-bottom: 1%;
+  padding: 5px;
+  text-align: center;
+  
+}
+
+.Info_User ul,.Site_Info ul,.Help_Info ul{
+  width: 100%;
+  list-style:none;
+  text-align: center;
+  padding-left:0;
+}
+
+.Help_Info img{
+    width: 250px;
+    border-radius: 6px;
+    border: 2px solid gray;
+}
+
+.url{
+  position: relative;
+  top:10px;
+  font-size: 1.2rem;
+  left: 30px;
+}
+
+.Goto_MakeAc{
+    transition: .3s;
+  position: relative;
+  background: #1d6bb2;
+    color: #fff;
+    height: 40px;
+  FONT-WEIGHT: 500;
+  display: inline-block;
+  max-width: 300px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c2d3e2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Goto_MakeAc:hover{
+    opacity: .7;
+    transition: .3s;
+}
+
+.content{
+    display:block;
+}
+
+.main_info{
+    position: relative;
+    border-radius: 6px;
+    width: 40vw;
+    margin-left: 30em;
+    background-color:white;
+    padding: 20px 20px 30px;
+    overflow: hidden;
+  }
+
+.card_info{
+    position: relative;
+    margin-top:20px ;
+    border-radius: 6px;
+    width: 40vw;
+    margin-left: 30em;
+    background-color:white;
+    padding: 20px 20px 30px;
+    overflow: hidden;
+}
+
+.Server_address{
+  position: relative;
+  margin-top:20px ;
+  border-radius: 6px;
+  width: 40vw;
+  margin-left: 30em;
+  background-color:white;
+  padding: 20px 20px 30px;
+  overflow: hidden;
+}
+
+h2{
+    text-align: center;
+}
+
+input{
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #c2d3e2;
+  border-radius: 5px;
+}
+
+.text{
+  font-size: 20px;
+}
+
+.LoginB{
+  position: relative;
+  background: #1d6bb2;
+    color: #fff;
+    height: 40px;
+    padding: 10px;
+  FONT-WEIGHT: 500;
+  display: inline-block;
+  max-width: 265px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer{
+  height: 100px;
+}
+
+#Deposit{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+  #MainBank{
+    width: 100%;
+    text-align: center;
+  }
+
+  .contract{
+    position: relative;
+    top: 10px;
+    padding:0;
+    list-style: none; 
+  }
+
+  .contract li{
+    position: relative;
+    top: -20px;
+  }
+
+  .contract a{
+    text-decoration: none;
+    height: 70px;
+    padding-top: 5px;
+    margin: 0;
+    color: black;
+    border-radius: 10px;
+  }
+
+  .contract a:hover{
+    transition: 0.1s;
+    background: rgba(221, 221, 221, 0.425);
+  }
+
+  .contract a:active{
+    transition: 0.1s;
+    background: rgba(121, 121, 121, 0.425);
+  }
+  .contract h3{
+    position: relative;
+    top: -20px;
+    left: 10px;
+  }
+
+  .contract h2{
+    position: relative;
+    text-align: center;
+    top: -50px;
+  }
+
+  .contract_username, .contract_password, .contract_email, .contract_address, .contract_PhoneNumber, .contract_linkedaccount{
+    height: 80px;
+  }
+
+  .contract hr{
+    position: relative;
+    top:-22px;
+    color: rgb(92, 92, 92);
+  }
+
+  .contract a{
+    display: block;
+  }
+
+  .controller {
+    position: relative;
+    width: fit-content;
+    float:right
+  }
+
+  .controller a{
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    top: 15px;
+    height: 70px;
+    width: fit-content;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  .contract_controller_cancel{
+    transition: 0.1s;
+    color: #1d6bb2;
+    padding: 7px 10px;
+  }
+
+  .contract_controller_cancel:hover{
+    transition: 0.1s;
+    background: #1d6ab250;
+  }
+
+  .contract_controller_save{
+    transition: 0.1s;
+    background: #1d6bb2;
+    color: white;
+    padding: 7px 20px;
+  }
+
+  .contract_controller_save:hover{
+    transition: 0.1s;
+    background: #3a7cb9;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .5);
+  }
+
+ /*.contract span {
+    position: relative;
+  }
+  .contract span::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      transform: rotate(45deg);
+      border-style: solid;
+      border-color: #000;
+      border-top-width: 3px;
+      border-right-width: 3px;
+      border-bottom-width: 0;
+      border-left-width: 0;
+      vertical-align: middle;
+      float:right;
+      margin-right: 30px;
+    }*/
+
+}

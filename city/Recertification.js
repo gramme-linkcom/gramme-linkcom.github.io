@@ -1,1 +1,74 @@
-function Recertification_input(){var f=String(Cookies.get("UserName")),e=String(Cookies.get("Password")),n,i,r,u,o;if(f=CryptoJS.AES.decrypt(f,"UsernameEncrypt"),e=CryptoJS.AES.decrypt(e,"PasswordEncrypt"),n=f.toString(CryptoJS.enc.Utf8),i=e.toString(CryptoJS.enc.Utf8),$("#Name").val().length==0&&$("#Password").val().length==0){let n=document.getElementById("Name_text").innerText;document.getElementById("Name_text").innerText="この項目は必須項目です。";let t=document.getElementById("Pass_text").innerText;document.getElementById("Pass_text").innerText="この項目は必須項目です。";return}if($("#Name").val().length==0&&$("#Password").val().length!==0){let n=document.getElementById("Name_text").innerText;document.getElementById("Name_text").innerText="この項目は必須項目です。";let t=document.getElementById("Pass_text").innerText;document.getElementById("Pass_text").innerText="";return}if($("#Password").val().length==0&&$("#Name").val().length!==0){let n=document.getElementById("Name_text").innerText;document.getElementById("Name_text").innerText="";let t=document.getElementById("Pass_text").innerText;document.getElementById("Pass_text").innerText="この項目は必須項目です。";return}if(r=$("#Name").val(),u=$("#Password").val(),n!=r||i!=u){n!=r?document.getElementById("Name_text").innerText="現在のログインユーザーと違います。":n==r&&(document.getElementById("Name_text").innerText="");i!=u?document.getElementById("Pass_text").innerText="パスワードが違います。":i==u&&(document.getElementById("Pass_text").innerText="");return}o=CryptoJS.AES.encrypt(n,"Recertification");Cookies.set("Recertification",o,{expires:1});var s=location.search,h=s.split("="),t=decodeURIComponent(h[1]);t=CryptoJS.AES.decrypt(t,"URL_POST");t=t.toString(CryptoJS.enc.Utf8);window.location.href=t}window.onpageshow=function(n){if(n.persisted){var t=String(Cookies.get("UserName")),i=String(Cookies.get("Password"));(t=="undefined"||i=="undefind")&&(window.location.href="./403.html")}};document.addEventListener("DOMContentLoaded",function(){var n=String(Cookies.get("UserName")),t=String(Cookies.get("Password"));if(n=="undefined"||t=="undefind"){window.location.href="./index.html";return}})
+window.onpageshow = function(event) {
+    if (event.persisted) {
+      var Username = String(Cookies.get('UserName'));
+      var Password = String(Cookies.get('Password'));
+        if((Username == "undefined")||(Password == "undefind")){
+           window.location.href = './403.html';
+     }
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var Username = String(Cookies.get('UserName'));
+    var Password = String(Cookies.get('Password'));
+  if((Username == "undefined")||(Password == "undefind")){
+    window.location.href = './index.html';
+      return;
+  }
+});
+
+function Recertification_input(){ 
+    var UsernameEncrypt = String(Cookies.get('UserName'));
+    var PasswordEncrypt = String(Cookies.get('Password'));
+    UsernameEncrypt = CryptoJS.AES.decrypt(UsernameEncrypt, "UsernameEncrypt");
+    PasswordEncrypt = CryptoJS.AES.decrypt(PasswordEncrypt, "PasswordEncrypt");
+    var Username = UsernameEncrypt.toString(CryptoJS.enc.Utf8);
+    var Password = PasswordEncrypt.toString(CryptoJS.enc.Utf8);
+
+    if (($('#Name').val().length==0) && ($('#Password').val().length==0)){
+        let Name_textBox = document.getElementById('Name_text').innerText;
+        document.getElementById('Name_text').innerText = 'この項目は必須項目です。';
+        let Pass_textBox = document.getElementById('Pass_text').innerText;
+        document.getElementById('Pass_text').innerText = 'この項目は必須項目です。';
+        return;
+    } else if(($('#Name').val().length==0) && ($('#Password').val().length!==0)){
+        let Name_textBox = document.getElementById('Name_text').innerText;
+        document.getElementById('Name_text').innerText = 'この項目は必須項目です。';
+        let Pass_textBox = document.getElementById('Pass_text').innerText;
+        document.getElementById('Pass_text').innerText = '';
+        return;
+    } else if(($('#Password').val().length==0) && ($('#Name').val().length!==0)){
+        let Name_textBox = document.getElementById('Name_text').innerText;
+        document.getElementById('Name_text').innerText = '';
+        let Pass_textBox = document.getElementById('Pass_text').innerText;
+        document.getElementById('Pass_text').innerText = 'この項目は必須項目です。';
+        return;
+    } else {
+        var Username_input = $('#Name').val();
+        var Password_input = $('#Password').val();
+        
+        if ((Username != Username_input) || (Password != Password_input)){
+            if (Username != Username_input){
+                document.getElementById('Name_text').innerText = '現在のログインユーザーと違います。';
+            } else if (Username == Username_input){
+                document.getElementById('Name_text').innerText = '';
+            }
+
+            if (Password != Password_input){
+                document.getElementById('Pass_text').innerText = 'パスワードが違います。';
+            } else if (Password == Password_input){
+                document.getElementById('Pass_text').innerText = '';
+            }
+            return;
+        }
+        var Recertification = CryptoJS.AES.encrypt(Username, "Recertification");
+        Cookies.set('Recertification', Recertification , {expires: 1});
+        var query = location.search;
+        var value = query.split('=');
+        var URL = decodeURIComponent(value[1]);
+        URL = CryptoJS.AES.decrypt(URL, "URL_POST");
+        URL = URL.toString(CryptoJS.enc.Utf8);
+        window.location.href = URL;
+    }
+}
+
