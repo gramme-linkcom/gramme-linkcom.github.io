@@ -1,1 +1,11 @@
-@font-face {font-family: 'LineSeed';src: url('https://gramme-linkcom.github.io/font/LINESeedJP_OTF_Bd.woff') format('woff'),url('https://gramme-linkcom.github.io/font/LINESeedJP_OTF_Eb.woff') format('woff'),url('https://gramme-linkcom.github.io/font/LINESeedJP_OTF_Rg.woff') format('woff'),url('https://gramme-linkcom.github.io/font/LINESeedJP_OTF_Th.woff') format('woff');}html{font-family: "LineSeed";}
+@font-face {
+    font-family: 'LineSeed';
+    src: url('https://gramme.f5.si/font/LINESeedJP_OTF_Bd.woff') format('woff'),
+      url('https://gramme.f5.si/font/LINESeedJP_OTF_Eb.woff') format('woff'),
+      url('https://gramme.f5.si/font/LINESeedJP_OTF_Rg.woff') format('woff'),
+      url('https://gramme.f5.si/font/LINESeedJP_OTF_Th.woff') format('woff');
+  }
+
+html{
+    font-family: "LineSeed";
+}
